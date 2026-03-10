@@ -1,0 +1,129 @@
+/*
+ * Bowl & Stroll — Menu Print Stylesheet
+ * Used by menu.html (the printable 3-column menu layout).
+ * Shares variables from style.css via @import.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap');
+
+:root {
+    --forest: #3d5a3d;
+    --sage: #7a9a7a;
+    --cream: #faf8f3;
+    --cream-dark: #f0ebe0;
+    --charcoal: #2a2a2a;
+    --white: #ffffff;
+    --accent: #c4d4a8;
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-body: 'DM Sans', -apple-system, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--cream);
+    min-height: 100vh;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background-color: var(--forest);
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo { display: flex; align-items: center; gap: 12px; }
+.logo-icon { width: 50px; height: 50px; }
+.logo-text { color: white; font-family: var(--font-display); font-size: 1.8rem; font-weight: 600; line-height: 1.1; }
+.website { color: var(--accent); font-family: var(--font-display); font-size: 1.4rem; font-style: italic; }
+
+/* Main Content */
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 40px 60px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* Column Layout */
+.left-column,
+.middle-column,
+.right-column { display: flex; flex-direction: column; gap: 30px; }
+
+/* Section Cards */
+.section-card { background: white; border-radius: 16px; padding: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.section-title { font-family: var(--font-display); font-size: 1.8rem; color: var(--forest); margin-bottom: 20px; font-weight: 600; }
+.section-title-with-price { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.section-price-badge { background-color: var(--forest); color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.95rem; font-weight: 500; }
+
+/* Build Items */
+.build-item { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 16px; }
+.build-item-header { display: flex; justify-content: space-between; align-items: baseline; width: 100%; }
+.build-item-name { font-weight: 500; color: var(--charcoal); font-size: 1.1rem; }
+.build-item-desc { font-size: 0.85rem; color: #777; }
+.item-price { font-weight: 600; color: var(--forest); font-size: 1.1rem; }
+
+/* Combos divider */
+.combos-divider { text-align: center; margin: 16px 0; font-size: 0.85rem; color: #aaa; font-style: italic; letter-spacing: 2px; }
+
+/* Protein note */
+.protein-note { background: #f5f2eb; padding: 10px 14px; border-radius: 8px; font-size: 0.85rem; color: #555; text-align: center; margin-top: 10px; }
+
+/* Signature items */
+.signature-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px; }
+.size-badge { font-size: 0.85rem; color: var(--forest); font-weight: 500; }
+.signature-item { background: #f5f2eb; border-radius: 12px; padding: 16px; margin-bottom: 12px; border-left: 4px solid var(--sage); }
+.signature-name { font-weight: 500; color: #4a6b4a; font-size: 1.05rem; margin-bottom: 4px; }
+.signature-ingredients { font-size: 0.85rem; color: #777; }
+
+/* Hot Sub items */
+.toastie-item { padding: 14px 0; border-bottom: 1px solid #f0ebe0; }
+.toastie-item:last-child { border-bottom: none; }
+.toastie-header { display: flex; justify-content: space-between; align-items: baseline; }
+.toastie-name { font-weight: 500; color: var(--charcoal); font-size: 1.1rem; }
+.toastie-desc { font-size: 0.85rem; color: #777; margin-top: 3px; }
+
+/* Combo Deal Box */
+.combo-deal { background-color: var(--forest); color: white; border-radius: 12px; padding: 20px; text-align: center; margin-top: 20px; }
+.combo-title { font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; margin-bottom: 4px; }
+.combo-desc { font-size: 0.85rem; opacity: 0.85; margin-bottom: 8px; }
+.combo-price { font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; }
+
+/* Salad Me Up Deal */
+.salad-me-up { background: linear-gradient(135deg, var(--sage), #4a6b4a); color: white; border-radius: 12px; padding: 16px; text-align: center; margin-top: 16px; }
+.salad-me-up-title { font-family: var(--font-display); font-size: 1.1rem; font-weight: 600; }
+.salad-me-up-desc { font-size: 0.8rem; opacity: 0.85; margin: 4px 0; }
+.salad-me-up-price { font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; }
+
+/* Menu Items (generic) */
+.menu-item { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #f0ebe0; }
+.menu-item:last-child { border-bottom: none; }
+.item-name { font-weight: 500; color: var(--charcoal); }
+
+/* Acai Section */
+.acai-section .section-title { color: #b85c68; }
+.acai-item { background: #fdf2f4; border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; border-left: 4px solid #c4727e; }
+.acai-name { font-family: var(--font-display); font-weight: 600; color: #b85c68; font-size: 1.1rem; margin-bottom: 3px; }
+.acai-ingredients { font-size: 0.8rem; color: #888; }
+.acai-build { background: #fef9fa; border-radius: 10px; padding: 14px; text-align: center; margin-top: 14px; border: 1px dashed #e0c8cc; }
+.acai-build-title { font-weight: 600; color: var(--charcoal); font-size: 0.9rem; margin-bottom: 6px; }
+.acai-options { font-size: 0.8rem; color: #666; line-height: 1.5; }
+.yogurt-swap { font-size: 0.8rem; color: #999; text-align: center; margin-top: 10px; font-style: italic; }
+
+/* Drinks */
+.drinks-section .section-title { color: #b85c68; }
+
+/* Build item tweaks */
+.build-item { display: block; margin-bottom: 16px; }
+.build-item-name { font-weight: 600; font-size: 1.15rem; }
+.protein-note strong { color: var(--forest); }
+
+/* Signature tweaks */
+.size-badge { background-color: var(--sage); color: white; padding: 6px 14px; border-radius: 20px; }
+.signature-name { font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; }
