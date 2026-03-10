@@ -1,0 +1,2847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bowl & Stroll | Fresh Salad Bowls, Liverpool</title>
+    <meta name="description" content="Build your perfect bowl with fresh ingredients. Collection via StoreKit, delivery via Uber Eats & Deliveroo. 14a Water Street, Liverpool.">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="restaurant">
+    <meta property="og:title" content="Bowl & Stroll | Fresh Salad Bowls, Liverpool">
+    <meta property="og:description" content="Build your perfect bowl with fresh ingredients. Collection or delivery. 14a Water Street, Liverpool.">
+    <meta property="og:image" content="images/photoshoot_for_bowl__stroll_hero_550x440.jpg">
+    <meta property="og:url" content="https://bowlandstroll.com">
+    <meta property="og:site_name" content="Bowl & Stroll">
+    <meta property="og:locale" content="en_GB">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bowl & Stroll | Fresh Salad Bowls, Liverpool">
+    <meta name="twitter:description" content="Build your perfect bowl with fresh ingredients. Collection or delivery.">
+    <meta name="twitter:image" content="images/photoshoot_for_bowl__stroll_hero_550x440.jpg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Bowl & Stroll",
+        "image": "images/photoshoot_for_bowl__stroll_hero_550x440.jpg",
+        "url": "https://bowlandstroll.com",
+        "telephone": "+447446640239",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "14a Water Street",
+            "addressLocality": "Liverpool",
+            "postalCode": "L2 8TD",
+            "addressCountry": "GB"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 53.4084,
+            "longitude": -2.9936
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "14:30"
+            }
+        ],
+        "servesCuisine": ["Salad", "Healthy", "Acai", "Toasties"],
+        "priceRange": "$$",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "33"
+        },
+        "menu": "https://order.storekit.com/bowl-and-stroll/menu",
+        "acceptsReservations": "False",
+        "hasMenu": {
+            "@type": "Menu",
+            "hasMenuSection": [
+                {
+                    "@type": "MenuSection",
+                    "name": "Signature Bowls",
+                    "hasMenuItem": [
+                        {"@type": "MenuItem", "name": "Chicken Fiesta", "offers": {"@type": "Offer", "priceCurrency": "GBP", "price": "7.50"}},
+                        {"@type": "MenuItem", "name": "Pesto Passion", "offers": {"@type": "Offer", "priceCurrency": "GBP", "price": "7.50"}},
+                        {"@type": "MenuItem", "name": "Falafel Fattoush", "offers": {"@type": "Offer", "priceCurrency": "GBP", "price": "7.50"}},
+                        {"@type": "MenuItem", "name": "Cheeky Tuna", "offers": {"@type": "Offer", "priceCurrency": "GBP", "price": "7.50"}}
+                    ]
+                },
+                {
+                    "@type": "MenuSection",
+                    "name": "Acai Bowls",
+                    "hasMenuItem": [
+                        {"@type": "MenuItem", "name": "Strawberry Delight", "offers": {"@type": "Offer", "priceCurrency": "GBP", "price": "8.50"}},
+                        {"@type": "MenuItem", "name": "Blueberry Dream", "offers": {"@type": "Offer", "priceCurrency": "GBP", "price": "8.50"}}
+                    ]
+                }
+            ]
+        }
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --forest: #3d5a3d;
+            --forest-dark: #2d442d;
+            --forest-light: #4a6b4a;
+            --sage: #7a9a7a;
+            --cream: #faf8f3;
+            --cream-dark: #f0ebe0;
+            --sand: #e8e2d5;
+            --charcoal: #2a2a2a;
+            --white: #ffffff;
+            --accent: #c4d4a8;
+            --coral: #e07a5f;
+            --font-display: 'Fraunces', Georgia, serif;
+            --font-body: 'DM Sans', -apple-system, sans-serif;
+            --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+            --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--cream);
+            color: var(--charcoal);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Utility Classes */
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(60px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s var(--ease-out-expo);
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Header / Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.4s var(--ease-out-quart);
+        }
+
+        header.scrolled {
+            background: rgba(250, 248, 243, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 2px 40px rgba(0, 0, 0, 0.06);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--forest);
+        }
+
+        .logo img {
+            height: 48px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: none;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--charcoal);
+            font-size: 0.9rem;
+            font-weight: 500;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--forest);
+            transition: width 0.3s var(--ease-out-quart);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            display: none;
+            gap: 0.75rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.875rem 1.5rem;
+            border-radius: 100px;
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s var(--ease-out-quart);
+        }
+
+        .btn-primary {
+            background: var(--forest);
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        .btn-primary:hover {
+            background: var(--forest-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(61, 90, 61, 0.35);
+        }
+
+        .btn-secondary {
+            background: var(--white);
+            color: var(--forest);
+            border: 2px solid var(--forest);
+            font-weight: 600;
+        }
+
+        .btn-secondary:hover {
+            background: var(--forest);
+            color: var(--white);
+        }
+
+        .btn-large {
+            padding: 1.125rem 2rem;
+            font-size: 1rem;
+        }
+
+        .btn-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+
+        .mobile-menu-btn span {
+            width: 24px;
+            height: 2px;
+            background: var(--forest);
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--cream);
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s var(--ease-out-quart);
+        }
+
+        .mobile-menu.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-menu a {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            color: var(--forest);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding: 6rem 0 4rem;
+            overflow: hidden;
+            background: var(--cream);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-text {
+            animation: fadeInUp 1s var(--ease-out-expo) 0.2s both;
+        }
+
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--forest);
+            padding: 0.5rem 1rem;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-tag svg {
+            width: 16px;
+            height: 16px;
+            color: #f5c542;
+        }
+
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            font-weight: 600;
+            line-height: 1.1;
+            color: var(--charcoal);
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.03em;
+        }
+
+        .hero h1 em {
+            font-style: italic;
+            color: var(--forest);
+        }
+
+        .hero-description {
+            font-size: 1.125rem;
+            color: var(--charcoal);
+            max-width: 500px;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .hero-image {
+            position: relative;
+            animation: slideInRight 1s var(--ease-out-expo) 0.4s both;
+        }
+
+        .hero-image {
+            overflow: hidden;
+            border-radius: 24px;
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 40px 80px rgba(61, 90, 61, 0.2);
+        }
+
+        .hero-photo {
+            width: 110%;
+            max-width: none;
+            display: block;
+            object-fit: cover;
+            margin: -2% 0 -3% -5%;
+        }
+
+        .hero-photo-badge {
+            position: absolute;
+            bottom: -16px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--forest);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 100px;
+            font-family: var(--font-display);
+            font-size: 0.95rem;
+            font-weight: 500;
+            white-space: nowrap;
+            box-shadow: 0 10px 30px rgba(61, 90, 61, 0.35);
+        }
+
+        /* Promo Banner */
+        .promo-banner {
+            background: linear-gradient(135deg, var(--coral) 0%, #c4654e 100%);
+            color: var(--white);
+            padding: 1rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .promo-banner-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .promo-banner-text {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .promo-banner .btn {
+            padding: 0.5rem 1.25rem;
+            font-size: 0.85rem;
+            background: var(--white);
+            color: var(--coral);
+        }
+
+        .promo-banner .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Marquee */
+        .marquee-section {
+            background: var(--forest);
+            padding: 1rem 0;
+            overflow: hidden;
+        }
+
+        .marquee-track {
+            display: flex;
+            animation: marquee 20s linear infinite;
+        }
+
+        .marquee-content {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            padding: 0 1.5rem;
+            white-space: nowrap;
+        }
+
+        .marquee-item {
+            font-family: var(--font-display);
+            font-size: 1.125rem;
+            color: var(--cream);
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .marquee-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        /* Social Proof */
+        .social-proof-section {
+            padding: 4rem 0;
+            background: var(--white);
+        }
+
+        .social-proof-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .social-proof-header h2 {
+            font-family: var(--font-display);
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            font-weight: 500;
+            color: var(--forest-dark);
+        }
+
+        .social-proof-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-bottom: 2.5rem;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--forest);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--charcoal);
+            opacity: 0.7;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .review-card {
+            background: var(--cream);
+            border-radius: 16px;
+            padding: 1.5rem;
+            transition: all 0.3s var(--ease-out-quart);
+        }
+
+        .review-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+        }
+
+        .review-stars {
+            color: #f5a623;
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .review-text {
+            font-size: 0.95rem;
+            color: var(--charcoal);
+            line-height: 1.6;
+            margin-bottom: 0.75rem;
+        }
+
+        .review-author {
+            font-size: 0.85rem;
+            color: var(--charcoal);
+            opacity: 0.6;
+            font-weight: 500;
+        }
+
+        /* Order Section */
+        .order-section {
+            padding: 5rem 0;
+            background: var(--cream);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-tag {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--forest);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 500;
+            color: var(--forest-dark);
+            letter-spacing: -0.02em;
+        }
+
+        .order-options {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .order-card {
+            background: var(--white);
+            border-radius: 24px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.4s var(--ease-out-quart);
+            border: 2px solid transparent;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .order-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--forest);
+            box-shadow: 0 20px 60px rgba(61, 90, 61, 0.15);
+        }
+
+        .order-card-featured {
+            border-color: var(--forest);
+            background: linear-gradient(135deg, var(--cream) 0%, var(--white) 100%);
+            position: relative;
+        }
+
+        .order-card-featured::before {
+            content: 'Best Value — No Fees';
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--coral);
+            color: var(--white);
+            padding: 0.35rem 1rem;
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            white-space: nowrap;
+        }
+
+        .order-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--forest);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+        }
+
+        .order-icon svg {
+            width: 36px;
+            height: 36px;
+            color: var(--white);
+        }
+
+        .order-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--forest-dark);
+            margin-bottom: 0.75rem;
+        }
+
+        .order-card p {
+            color: var(--charcoal);
+            opacity: 0.75;
+            margin-bottom: 1.5rem;
+        }
+
+        .order-card .btn {
+            width: 100%;
+        }
+
+        /* Menu Section */
+        .menu-section {
+            padding: 5rem 0;
+            background: var(--white);
+        }
+
+        .menu-tabs {
+            display: flex;
+            gap: 0.5rem;
+            overflow-x: auto;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .menu-tabs::-webkit-scrollbar {
+            display: none;
+        }
+
+        .menu-tab {
+            flex-shrink: 0;
+            padding: 0.75rem 1.5rem;
+            border-radius: 100px;
+            border: none;
+            background: var(--cream);
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--charcoal);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .menu-tab.active,
+        .menu-tab:hover {
+            background: var(--forest);
+            color: var(--white);
+        }
+
+        .menu-grid {
+            display: none;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        .menu-grid.active {
+            display: grid;
+        }
+
+        .menu-item {
+            background: var(--cream);
+            border-radius: 20px;
+            padding: 1.5rem;
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            transition: all 0.3s var(--ease-out-quart);
+        }
+
+        .menu-item:hover {
+            transform: translateX(8px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .menu-item-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 12px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .menu-item-emoji {
+            width: 48px;
+            height: 48px;
+            background: var(--sand);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .menu-item-content {
+            flex: 1;
+        }
+
+        .menu-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .menu-item h4 {
+            font-family: var(--font-display);
+            font-size: 1.125rem;
+            font-weight: 500;
+            color: var(--forest-dark);
+        }
+
+        .menu-item-price {
+            font-weight: 600;
+            color: var(--forest);
+            white-space: nowrap;
+        }
+
+        .menu-item p {
+            font-size: 0.9rem;
+            color: var(--charcoal);
+            opacity: 0.7;
+            line-height: 1.5;
+        }
+
+        .menu-item-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--forest);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .menu-item-cta:hover {
+            gap: 0.6rem;
+        }
+
+        .menu-item-cta svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        .menu-section-cta {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        /* Photo Gallery */
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .photo-gallery img {
+            width: 100%;
+            border-radius: 16px;
+            object-fit: cover;
+            aspect-ratio: 550/440;
+            transition: transform 0.3s var(--ease-out-quart);
+        }
+
+        .photo-gallery img:hover {
+            transform: scale(1.03);
+        }
+
+        /* Build Your Own Section */
+        .byo-section {
+            padding: 5rem 0;
+            background: var(--forest);
+            color: var(--white);
+        }
+
+        .byo-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .byo-text h2 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .byo-text p {
+            opacity: 0.85;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .byo-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .byo-step {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .byo-step-num {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .byo-step span {
+            font-weight: 500;
+        }
+
+        .byo-visual {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .byo-ingredient {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 1.25rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .byo-ingredient:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+
+        .byo-ingredient-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .byo-ingredient span {
+            font-size: 0.8rem;
+            opacity: 0.85;
+        }
+
+        /* Catering Section */
+        .catering-section {
+            padding: 5rem 0;
+            background: var(--cream);
+        }
+
+        .catering-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .catering-text h2 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 2.5rem);
+            font-weight: 500;
+            color: var(--forest-dark);
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .catering-text p {
+            font-size: 1.05rem;
+            color: var(--charcoal);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .catering-features {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .catering-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-weight: 500;
+            color: var(--charcoal);
+        }
+
+        .catering-features li::before {
+            content: '';
+            width: 24px;
+            height: 24px;
+            background: var(--forest);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .catering-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .catering-image {
+            border-radius: 24px;
+            overflow: hidden;
+        }
+
+        .catering-image img {
+            width: 100%;
+            border-radius: 24px;
+            object-fit: cover;
+            aspect-ratio: 550/440;
+        }
+
+        /* Location Section */
+        .location-section {
+            padding: 5rem 0;
+            background: var(--white);
+        }
+
+        .location-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .location-info h2 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 2.5rem);
+            font-weight: 500;
+            color: var(--forest-dark);
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .location-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .location-detail {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .location-detail svg {
+            width: 24px;
+            height: 24px;
+            color: var(--forest);
+            flex-shrink: 0;
+            margin-top: 0.125rem;
+        }
+
+        .location-detail strong {
+            display: block;
+            font-weight: 600;
+            color: var(--forest-dark);
+            margin-bottom: 0.25rem;
+        }
+
+        .location-detail span {
+            color: var(--charcoal);
+            opacity: 0.8;
+        }
+
+        .location-map {
+            border-radius: 24px;
+            overflow: hidden;
+            height: 300px;
+            background: var(--sand);
+        }
+
+        .location-map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .rating-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--sand);
+            padding: 0.75rem 1.25rem;
+            border-radius: 100px;
+            margin-top: 1.5rem;
+        }
+
+        .rating-stars {
+            color: #f5a623;
+            font-size: 1rem;
+        }
+
+        .rating-text {
+            font-weight: 600;
+            color: var(--forest-dark);
+        }
+
+        /* Rewards Section */
+        .rewards-section {
+            padding: 5rem 0;
+            background: var(--cream);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .rewards-intro {
+            max-width: 700px;
+            margin: 0 auto 3rem;
+        }
+
+        .rewards-intro-card {
+            background: var(--white);
+            border-radius: 24px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 1.5rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+        }
+
+        .piggy-widget {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #ffb6c1 0%, #ff91a4 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 15px 40px rgba(255, 145, 164, 0.35);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .piggy-icon {
+            font-size: 2.75rem;
+        }
+
+        .rewards-intro-text h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--forest-dark);
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .rewards-intro-text p {
+            font-size: 1.05rem;
+            color: var(--charcoal);
+            line-height: 1.6;
+        }
+
+        .rewards-steps {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+
+        .reward-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            background: var(--white);
+            padding: 1.25rem;
+            border-radius: 16px;
+            transition: all 0.3s var(--ease-out-quart);
+        }
+
+        .reward-step:hover {
+            transform: translateX(8px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+        }
+
+        .reward-step-num {
+            width: 40px;
+            height: 40px;
+            background: var(--forest);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .reward-step-content h4 {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            color: var(--forest-dark);
+            margin-bottom: 0.25rem;
+            font-weight: 500;
+        }
+
+        .reward-step-content p {
+            color: var(--charcoal);
+            font-size: 0.9rem;
+            line-height: 1.5;
+            opacity: 0.85;
+        }
+
+        .rewards-available {
+            background: var(--forest);
+            border-radius: 24px;
+            padding: 2.5rem 1.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .rewards-available h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--white);
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .rewards-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .reward-item {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 1.25rem 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            transition: all 0.3s ease;
+        }
+
+        .reward-item:hover {
+            background: rgba(255, 255, 255, 0.18);
+            transform: scale(1.02);
+        }
+
+        .reward-points {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        .reward-name {
+            font-weight: 600;
+            color: var(--white);
+            font-size: 0.95rem;
+        }
+
+        .reward-desc {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .rewards-tiers {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .rewards-tiers h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--forest-dark);
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .tiers-subtitle {
+            color: var(--charcoal);
+            opacity: 0.8;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+
+        .tiers-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .tier-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 1.5rem 1rem;
+            text-align: center;
+            border: 2px solid var(--sand);
+            transition: all 0.3s ease;
+        }
+
+        .tier-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .tier-badge {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .tier-card h4 {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            color: var(--forest-dark);
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .tier-range {
+            font-size: 0.85rem;
+            color: var(--forest);
+            font-weight: 500;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .tier-perks {
+            list-style: none;
+            text-align: left;
+            font-size: 0.85rem;
+            color: var(--charcoal);
+        }
+
+        .tier-perks li {
+            padding: 0.375rem 0;
+            padding-left: 1.25rem;
+            position: relative;
+        }
+
+        .tier-perks li::before {
+            content: '\2713';
+            position: absolute;
+            left: 0;
+            color: var(--forest);
+            font-weight: 600;
+        }
+
+        .tier-platinum {
+            border-color: var(--forest);
+            background: linear-gradient(135deg, var(--cream) 0%, var(--white) 100%);
+        }
+
+        .rewards-cta {
+            text-align: center;
+        }
+
+        .rewards-cta > p {
+            font-size: 1.1rem;
+            color: var(--charcoal);
+            margin-bottom: 1.5rem;
+        }
+
+        .rewards-cta-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .rewards-cta-note {
+            font-size: 0.9rem;
+            color: var(--charcoal);
+            opacity: 0.7;
+        }
+
+        /* Signup Modal */
+        .signup-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s var(--ease-out-quart);
+        }
+
+        .signup-modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .signup-modal-backdrop {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+        }
+
+        .signup-modal-content {
+            position: relative;
+            background: var(--white);
+            border-radius: 24px;
+            width: 100%;
+            max-width: 480px;
+            max-height: 90vh;
+            overflow: hidden;
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
+            transform: translateY(20px) scale(0.95);
+            transition: transform 0.3s var(--ease-out-quart);
+        }
+
+        .signup-modal.active .signup-modal-content {
+            transform: translateY(0) scale(1);
+        }
+
+        .signup-modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 40px;
+            height: 40px;
+            background: var(--sand);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+            z-index: 10;
+        }
+
+        .signup-modal-close:hover {
+            background: var(--forest);
+        }
+
+        .signup-modal-close svg {
+            width: 20px;
+            height: 20px;
+            color: var(--charcoal);
+            transition: color 0.2s ease;
+        }
+
+        .signup-modal-close:hover svg {
+            color: var(--white);
+        }
+
+        .signup-modal-header {
+            background: var(--forest);
+            padding: 2rem 1.5rem;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .signup-modal-piggy {
+            font-size: 3rem;
+            margin-bottom: 0.75rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .signup-modal-header h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .signup-modal-header p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .signup-modal-form {
+            min-height: 400px;
+            max-height: 60vh;
+            overflow-y: auto;
+            padding: 1.5rem;
+        }
+
+        .signup-modal-form iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        #leatFormContainer {
+            width: 100%;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--forest-dark);
+            color: var(--white);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand .logo {
+            margin-bottom: 1rem;
+        }
+
+        .footer-logo img {
+            filter: brightness(0) invert(1);
+        }
+
+        .footer-tagline {
+            opacity: 0.75;
+            max-width: 280px;
+        }
+
+        .footer-links h5 {
+            font-family: var(--font-display);
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer-links a {
+            color: var(--white);
+            opacity: 0.75;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-link {
+            width: 44px;
+            height: 44px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--white);
+            color: var(--forest);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            opacity: 0.6;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (min-width: 480px) {
+            .rewards-intro-card {
+                flex-direction: row;
+                text-align: left;
+                padding: 2.5rem;
+            }
+
+            .rewards-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .reviews-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .photo-gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (min-width: 640px) {
+            .order-options {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .menu-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .rewards-steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .tiers-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .rewards-available {
+                padding: 3rem 2rem;
+            }
+
+            .signup-modal-content {
+                max-width: 520px;
+            }
+
+            .signup-modal-form {
+                min-height: 450px;
+                padding: 2rem;
+            }
+
+            .catering-content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .nav-links {
+                display: flex;
+            }
+
+            .nav-cta {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: none;
+            }
+
+            .hero-content {
+                grid-template-columns: 1.1fr 0.9fr;
+                gap: 4rem;
+            }
+
+            .hero-photo {
+                max-width: 500px;
+            }
+
+            .byo-content {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .location-content {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .location-map {
+                height: 100%;
+                min-height: 400px;
+            }
+
+            .footer-content {
+                grid-template-columns: 2fr 1fr 1fr 1fr;
+            }
+
+            .piggy-widget {
+                width: 120px;
+                height: 120px;
+            }
+
+            .piggy-icon {
+                font-size: 3.25rem;
+            }
+
+            .rewards-intro-text h3 {
+                font-size: 1.75rem;
+            }
+
+            .rewards-available h3,
+            .rewards-tiers h3 {
+                font-size: 1.75rem;
+            }
+
+            .reviews-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                padding: 0 2rem;
+            }
+
+            .order-options {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .byo-visual {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* Sticky Order Button (Mobile) */
+        .sticky-order {
+            position: fixed;
+            bottom: 1.5rem;
+            left: 1rem;
+            right: 1rem;
+            z-index: 900;
+            display: block;
+        }
+
+        .sticky-order .btn {
+            width: 100%;
+            box-shadow: 0 10px 40px rgba(61, 90, 61, 0.4);
+        }
+
+        @media (min-width: 768px) {
+            .sticky-order {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Bowl & Stroll">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#catering">Catering</a></li>
+                <li><a href="#location">Find Us</a></li>
+                <li><a href="#rewards">Rewards</a></li>
+            </ul>
+
+            <div class="nav-cta">
+                <a href="https://order.storekit.com/bowl-and-stroll/menu" class="btn btn-primary" target="_blank">
+                    Order Now
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#menu">Menu</a>
+        <a href="#order">Order</a>
+        <a href="#catering">Catering</a>
+        <a href="#location">Find Us</a>
+        <a href="#rewards">Rewards</a>
+        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="btn btn-primary btn-large" target="_blank">Order Now</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-tag">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                        </svg>
+                        5.0 Rated on Google
+                    </div>
+                    <h1>Build your <em>perfect</em> bowl</h1>
+                    <p class="hero-description">Fresh ingredients, bold flavours, crafted your way. Liverpool's favourite salad bowl destination — for collection or delivery.</p>
+                    <div class="hero-buttons">
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="btn btn-primary btn-large" target="_blank">
+                            Order Collection
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="#order" class="btn btn-secondary btn-large">
+                            Delivery Options
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/photoshoot_for_bowl__stroll_hero_550x440.jpg" alt="Fresh bowl from Bowl & Stroll" class="hero-photo">
+                    <div class="hero-photo-badge">From just &pound;7.50</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Special Banner -->
+    <div class="promo-banner">
+        <div class="container">
+            <div class="promo-banner-content">
+                <span class="promo-banner-text">Lunch Combo &mdash; Small bowl + snack + drink for just &pound;9.50</span>
+                <a href="https://order.storekit.com/bowl-and-stroll/menu" class="btn" target="_blank">Order Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Marquee -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <span class="marquee-item"><span class="marquee-dot"></span>Build Your Own</span>
+                <span class="marquee-item"><span class="marquee-dot"></span>Signature Bowls</span>
+                <span class="marquee-item"><span class="marquee-dot"></span>Acai Bowls</span>
+                <span class="marquee-item"><span class="marquee-dot"></span>Toasties</span>
+                <span class="marquee-item"><span class="marquee-dot"></span>Soup Pots</span>
+                <span class="marquee-item"><span class="marquee-dot"></span>Coffee & Tea</span>
+                <span class="marquee-item"><span class="marquee-dot"></span>Build Your Own</span>
+                <span class="marquee-item"><span class="marquee-dot"></span>Signature Bowls</span>
+                <span class="marquee-item"><span class="marquee-dot"></span>Acai Bowls</span>
+                <span class="marquee-item"><span class="marquee-dot"></span>Toasties</span>
+                <span class="marquee-item"><span class="marquee-dot"></span>Soup Pots</span>
+                <span class="marquee-item"><span class="marquee-dot"></span>Coffee & Tea</span>
+            </div>
+            <div class="marquee-content">
+                <span class="marquee-item"><span class="marquee-dot"></span>Build Your Own</span>
+                <span class="marquee-item"><span class="marquee-dot"></span>Signature Bowls</span>
+                <span class="marquee-item"><span class="marquee-dot"></span>Acai Bowls</span>
+                <span class="marquee-item"><span class="marquee-dot"></span>Toasties</span>
+                <span class="marquee-item"><span class="marquee-dot"></span>Soup Pots</span>
+                <span class="marquee-item"><span class="marquee-dot"></span>Coffee & Tea</span>
+                <span class="marquee-item"><span class="marquee-dot"></span>Build Your Own</span>
+                <span class="marquee-item"><span class="marquee-dot"></span>Signature Bowls</span>
+                <span class="marquee-item"><span class="marquee-dot"></span>Acai Bowls</span>
+                <span class="marquee-item"><span class="marquee-dot"></span>Toasties</span>
+                <span class="marquee-item"><span class="marquee-dot"></span>Soup Pots</span>
+                <span class="marquee-item"><span class="marquee-dot"></span>Coffee & Tea</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof-section">
+        <div class="container">
+            <div class="social-proof-header animate-on-scroll">
+                <h2>Liverpool's top-rated bowl spot</h2>
+            </div>
+            <div class="social-proof-stats animate-on-scroll">
+                <div class="stat-item">
+                    <span class="stat-number">5.0</span>
+                    <span class="stat-label">Google Rating</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">33+</span>
+                    <span class="stat-label">5-Star Reviews</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Fresh Ingredients</span>
+                </div>
+            </div>
+            <div class="reviews-grid animate-on-scroll">
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Best salad bowls in Liverpool! The Chicken Fiesta is unreal. Fresh, filling, and ready in minutes."</p>
+                    <span class="review-author">- Google Review</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"Our go-to lunch spot on Water Street. The build-your-own option means you never get bored."</p>
+                    <span class="review-author">- Google Review</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="review-text">"The acai bowls are incredible. Staff are always lovely and the rewards scheme is a nice touch."</p>
+                    <span class="review-author">- Google Review</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <p class="section-tag">Our Menu</p>
+                <h2 class="section-title">Fresh picks, daily made</h2>
+            </div>
+
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-tab="signature">Signature Bowls</button>
+                <button class="menu-tab" data-tab="build">Build Your Own</button>
+                <button class="menu-tab" data-tab="acai">Acai</button>
+                <button class="menu-tab" data-tab="toasties">Toasties</button>
+                <button class="menu-tab" data-tab="soup">Soup</button>
+                <button class="menu-tab" data-tab="drinks">Drinks</button>
+            </div>
+
+            <!-- Signature Bowls -->
+            <div class="menu-grid active" id="signature">
+                <div class="menu-item animate-on-scroll">
+                    <img src="images/photoshoot_for_bowl__stroll_chicken_fiesta_550x440.jpg" alt="Chicken Fiesta bowl" class="menu-item-photo">
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Chicken Fiesta</h4>
+                            <span class="menu-item-price">&pound;7.50 / &pound;10.50</span>
+                        </div>
+                        <p>Chicken, avocado, peppers, pico de gallo & pickled red onion</p>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="menu-item-cta" target="_blank">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll">
+                    <div class="menu-item-emoji">&#127807;</div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Pesto Passion</h4>
+                            <span class="menu-item-price">&pound;7.50 / &pound;10.50</span>
+                        </div>
+                        <p>Chicken, pico de gallo, olives, edamame & pickles on pesto fusilli</p>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="menu-item-cta" target="_blank">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll">
+                    <img src="images/photoshoot_for_bowl__stroll_falafel_fattoush_550x440.jpg" alt="Falafel Fattoush bowl" class="menu-item-photo">
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Falafel Fattoush</h4>
+                            <span class="menu-item-price">&pound;7.50 / &pound;10.50</span>
+                        </div>
+                        <p>Falafel, cucumber, cherry tomatoes, olives & hummus</p>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="menu-item-cta" target="_blank">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll">
+                    <img src="images/photoshoot_for_bowl__stroll_cheeky_tuna_550x440.jpg" alt="Cheeky Tuna bowl" class="menu-item-photo">
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Cheeky Tuna</h4>
+                            <span class="menu-item-price">&pound;7.50 / &pound;10.50</span>
+                        </div>
+                        <p>Tuna, edamame, seaweed salad, rainbow slaw & grated carrot</p>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="menu-item-cta" target="_blank">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll">
+                    <div class="menu-item-emoji">&#128170;</div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>The Beast</h4>
+                            <span class="menu-item-price">&pound;15.00</span>
+                        </div>
+                        <p>Chicken, birria beef, falafel, rice & 2 eggs &mdash; for the hungry</p>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="menu-item-cta" target="_blank">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Build Your Own -->
+            <div class="menu-grid" id="build">
+                <div class="menu-item animate-on-scroll">
+                    <div class="menu-item-emoji">&#129367;</div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Small Bowl</h4>
+                            <span class="menu-item-price">&pound;7.50</span>
+                        </div>
+                        <p>Base + protein + 3 toppings + sauce & toppers</p>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="menu-item-cta" target="_blank">Build yours <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll">
+                    <div class="menu-item-emoji">&#129367;</div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Big Bowl</h4>
+                            <span class="menu-item-price">&pound;10.50</span>
+                        </div>
+                        <p>Base + protein + 6 toppings + sauce & toppers</p>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="menu-item-cta" target="_blank">Build yours <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll">
+                    <div class="menu-item-emoji">&#127857;</div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Lunch Combo</h4>
+                            <span class="menu-item-price">&pound;9.50</span>
+                        </div>
+                        <p>Small bowl + snack + drink &mdash; the perfect office lunch</p>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="menu-item-cta" target="_blank">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll">
+                    <div class="menu-item-emoji">&#128170;</div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Protein Combo</h4>
+                            <span class="menu-item-price">&pound;13.50</span>
+                        </div>
+                        <p>Big bowl + 2 proteins + snack + drink</p>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="menu-item-cta" target="_blank">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Acai -->
+            <div class="menu-grid" id="acai">
+                <div class="menu-item animate-on-scroll">
+                    <img src="images/photoshoot_for_bowl__stroll_acai__4_toppings_550x440.jpg" alt="Acai bowl with 4 toppings" class="menu-item-photo">
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Build Your Own Acai</h4>
+                            <span class="menu-item-price">&pound;8.50</span>
+                        </div>
+                        <p>Pick 4 toppings from fruits, nuts, seeds & spreads</p>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="menu-item-cta" target="_blank">Build yours <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll">
+                    <div class="menu-item-emoji">&#127827;</div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Strawberry Delight</h4>
+                            <span class="menu-item-price">&pound;8.50</span>
+                        </div>
+                        <p>Strawberry, pistachio, choc granola</p>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="menu-item-cta" target="_blank">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll">
+                    <div class="menu-item-emoji">&#129744;</div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Blueberry Dream</h4>
+                            <span class="menu-item-price">&pound;8.50</span>
+                        </div>
+                        <p>Blueberry, nutella, mixed seeds</p>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="menu-item-cta" target="_blank">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll">
+                    <div class="menu-item-emoji">&#127820;</div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Banana Bliss</h4>
+                            <span class="menu-item-price">&pound;8.50</span>
+                        </div>
+                        <p>Banana, almond butter, granola</p>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="menu-item-cta" target="_blank">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll">
+                    <img src="images/photoshoot_for_bowl__stroll_greek_yoghurt_pot_550x440.jpg" alt="Greek Yoghurt Pot" class="menu-item-photo">
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Greek Yoghurt Pot</h4>
+                            <span class="menu-item-price">&pound;7.50</span>
+                        </div>
+                        <p>Swap acai for yoghurt &mdash; same great toppings</p>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="menu-item-cta" target="_blank">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Toasties -->
+            <div class="menu-grid" id="toasties">
+                <div class="menu-item animate-on-scroll">
+                    <div class="menu-item-emoji">&#129388;</div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Triple Cheese</h4>
+                            <span class="menu-item-price">&pound;5.50</span>
+                        </div>
+                        <p>Cheddar, mozzarella & red leicester melted to perfection</p>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="menu-item-cta" target="_blank">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll">
+                    <div class="menu-item-emoji">&#129388;</div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Pesto Chicken</h4>
+                            <span class="menu-item-price">&pound;7.50</span>
+                        </div>
+                        <p>Chicken, basil pesto, mozzarella & sun-dried tomato</p>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="menu-item-cta" target="_blank">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll">
+                    <div class="menu-item-emoji">&#127812;</div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Truffle Mushroom</h4>
+                            <span class="menu-item-price">&pound;8.00</span>
+                        </div>
+                        <p>Garlic mushrooms, truffle oil, melted mozzarella & herbs</p>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="menu-item-cta" target="_blank">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll">
+                    <div class="menu-item-emoji">&#127798;</div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>'Nduja Melt</h4>
+                            <span class="menu-item-price">&pound;9.00</span>
+                        </div>
+                        <p>Spicy pizza toastie &mdash; tomato, mozzarella, salami & 'nduja</p>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="menu-item-cta" target="_blank">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll">
+                    <div class="menu-item-emoji">&#129385;</div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Birria</h4>
+                            <span class="menu-item-price">&pound;9.00</span>
+                        </div>
+                        <p>Slow-cooked spiced beef, melted cheese & jalape&ntilde;os</p>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="menu-item-cta" target="_blank">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soup -->
+            <div class="menu-grid" id="soup">
+                <div class="menu-item animate-on-scroll">
+                    <div class="menu-item-emoji">&#127813;</div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Tomato & Basil</h4>
+                            <span class="menu-item-price">&pound;5.50</span>
+                        </div>
+                        <p>Classic warming soup with bread</p>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="menu-item-cta" target="_blank">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll">
+                    <div class="menu-item-emoji">&#127836;</div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Chicken Soup</h4>
+                            <span class="menu-item-price">&pound;5.50</span>
+                        </div>
+                        <p>Hearty chicken soup with bread</p>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="menu-item-cta" target="_blank">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll">
+                    <div class="menu-item-emoji">&#127838;</div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Toastie & Soup Combo</h4>
+                            <span class="menu-item-price">&pound;8.50</span>
+                        </div>
+                        <p>Triple cheese toastie + any soup</p>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="menu-item-cta" target="_blank">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drinks -->
+            <div class="menu-grid" id="drinks">
+                <div class="menu-item animate-on-scroll">
+                    <div class="menu-item-emoji">&#9749;</div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Tea / Espresso</h4>
+                            <span class="menu-item-price">&pound;2.50</span>
+                        </div>
+                        <p>Classic shots or a selection of teas</p>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll">
+                    <div class="menu-item-emoji">&#9749;</div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Americano / Latte</h4>
+                            <span class="menu-item-price">&pound;3.00</span>
+                        </div>
+                        <p>Smooth, rich coffee made to order</p>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll">
+                    <div class="menu-item-emoji">&#9749;</div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Hot Chocolate</h4>
+                            <span class="menu-item-price">&pound;3.50</span>
+                        </div>
+                        <p>Rich and indulgent</p>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll">
+                    <div class="menu-item-emoji">&#129380;</div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Soft Drinks</h4>
+                            <span class="menu-item-price">&pound;2.00</span>
+                        </div>
+                        <p>Selection of cans and bottles</p>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll">
+                    <div class="menu-item-emoji">&#128167;</div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h4>Water</h4>
+                            <span class="menu-item-price">&pound;1.00</span>
+                        </div>
+                        <p>Still or sparkling</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-section-cta animate-on-scroll">
+                <a href="https://order.storekit.com/bowl-and-stroll/menu" class="btn btn-primary btn-large" target="_blank">
+                    View Full Menu & Order
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section class="order-section" id="order">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <p class="section-tag">How to Order</p>
+                <h2 class="section-title">Get your bowl, your way</h2>
+            </div>
+            <div class="order-options">
+                <a href="https://order.storekit.com/bowl-and-stroll/menu" class="order-card order-card-featured animate-on-scroll" target="_blank">
+                    <div class="order-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                        </svg>
+                    </div>
+                    <h3>Collection</h3>
+                    <p>Skip the queue &mdash; order ahead and collect from 14a Water Street. No delivery fees.</p>
+                    <span class="btn btn-primary">Order on StoreKit</span>
+                </a>
+                <a href="https://deliveroo.co.uk/menu/liverpool/liverpool-city-centre/bowl-and-stroll" class="order-card animate-on-scroll" target="_blank">
+                    <div class="order-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>Deliveroo</h3>
+                    <p>Fast delivery with real-time tracking</p>
+                    <span class="btn btn-secondary">Order on Deliveroo</span>
+                </a>
+                <a href="https://www.ubereats.com/gb/store/bowl-%26-stroll/bQjKGEP-TyKcR6VdPRiIbw" class="order-card animate-on-scroll" target="_blank">
+                    <div class="order-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="1" y="3" width="15" height="13" rx="2"/>
+                            <path d="M16 8h4l3 3v5h-7V8z"/>
+                            <circle cx="5.5" cy="18.5" r="2.5"/>
+                            <circle cx="18.5" cy="18.5" r="2.5"/>
+                        </svg>
+                    </div>
+                    <h3>Uber Eats</h3>
+                    <p>Get it delivered to your desk or doorstep</p>
+                    <span class="btn btn-secondary">Order on Uber Eats</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Build Your Own -->
+    <section class="byo-section">
+        <div class="container">
+            <div class="byo-content">
+                <div class="byo-text animate-on-scroll">
+                    <h2>Build it your way</h2>
+                    <p>Create your perfect bowl in 4 simple steps. Mix and match from over 50 fresh ingredients.</p>
+                    <div class="byo-steps">
+                        <div class="byo-step">
+                            <span class="byo-step-num">1</span>
+                            <span>Pick your base &mdash; rice, leaf, pesto fusilli or mix</span>
+                        </div>
+                        <div class="byo-step">
+                            <span class="byo-step-num">2</span>
+                            <span>Choose your protein &mdash; chicken, tuna, or falafel</span>
+                        </div>
+                        <div class="byo-step">
+                            <span class="byo-step-num">3</span>
+                            <span>Load up on toppings &mdash; 3 or 6 depending on size</span>
+                        </div>
+                        <div class="byo-step">
+                            <span class="byo-step-num">4</span>
+                            <span>Finish with sauce & crunchy toppers</span>
+                        </div>
+                    </div>
+                    <a href="https://order.storekit.com/bowl-and-stroll/menu" class="btn btn-primary btn-large" target="_blank" style="background: var(--white); color: var(--forest);">
+                        Start Building
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="byo-visual animate-on-scroll">
+                    <div class="byo-ingredient">
+                        <div class="byo-ingredient-icon">&#127834;</div>
+                        <span>Jasmine Rice</span>
+                    </div>
+                    <div class="byo-ingredient">
+                        <div class="byo-ingredient-icon">&#129388;</div>
+                        <span>Mixed Leaf</span>
+                    </div>
+                    <div class="byo-ingredient">
+                        <div class="byo-ingredient-icon">&#127837;</div>
+                        <span>Pesto Fusilli</span>
+                    </div>
+                    <div class="byo-ingredient">
+                        <div class="byo-ingredient-icon">&#127831;</div>
+                        <span>Chicken</span>
+                    </div>
+                    <div class="byo-ingredient">
+                        <div class="byo-ingredient-icon">&#128031;</div>
+                        <span>Tuna</span>
+                    </div>
+                    <div class="byo-ingredient">
+                        <div class="byo-ingredient-icon">&#129478;</div>
+                        <span>Falafel</span>
+                    </div>
+                    <div class="byo-ingredient">
+                        <div class="byo-ingredient-icon">&#129361;</div>
+                        <span>Avocado</span>
+                    </div>
+                    <div class="byo-ingredient">
+                        <div class="byo-ingredient-icon">&#129752;</div>
+                        <span>Edamame</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catering Section -->
+    <section class="catering-section" id="catering">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <p class="section-tag">Catering</p>
+                <h2 class="section-title">Feed your team, your event, your people</h2>
+            </div>
+            <div class="catering-content">
+                <div class="catering-text animate-on-scroll">
+                    <p>From office lunches to events and celebrations &mdash; we cater bowls, platters and more for groups of any size. Fresh, colourful, and made to order.</p>
+                    <ul class="catering-features">
+                        <li>Custom bowl platters for 10+ people</li>
+                        <li>Office lunch packages with delivery</li>
+                        <li>Event catering with setup available</li>
+                        <li>Dietary options for every guest</li>
+                    </ul>
+                    <div class="catering-buttons">
+                        <a href="bowl_and_stroll_catering_menu_fusilli_corrected.pdf" class="btn btn-primary" target="_blank">
+                            View Catering Menu
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/bowlandstroll_" class="btn btn-secondary" target="_blank">
+                            Message Us
+                        </a>
+                    </div>
+                </div>
+                <div class="catering-image animate-on-scroll">
+                    <img src="images/photoshoot_for_bowl__stroll_chicken_fiesta_550x440.jpg" alt="Bowl & Stroll catering">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section" id="location">
+        <div class="container">
+            <div class="location-content">
+                <div class="location-info animate-on-scroll">
+                    <h2>Find us in Liverpool</h2>
+                    <div class="location-details">
+                        <div class="location-detail">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <div>
+                                <strong>Address</strong>
+                                <span>14a Water Street, Liverpool, L2 8TD</span>
+                            </div>
+                        </div>
+                        <div class="location-detail">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                            <div>
+                                <strong>Hours</strong>
+                                <span>Monday &ndash; Friday: 8am &ndash; 2:30pm<br>Bowls available from 10am</span>
+                            </div>
+                        </div>
+                        <div class="location-detail">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                            <div>
+                                <strong>Phone</strong>
+                                <span>+44 7446 640239</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://maps.google.com/?q=14a+Water+Street+Liverpool+L2+8TD" class="btn btn-secondary" target="_blank">
+                        Get Directions
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                        </svg>
+                    </a>
+                    <div class="rating-badge">
+                        <span class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        <span class="rating-text">5.0 &middot; 33 Google Reviews</span>
+                    </div>
+                </div>
+                <div class="location-map animate-on-scroll">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.0!2d-2.9936!3d53.4084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b212e6b9b0001%3A0x0!2s14a%20Water%20St%2C%20Liverpool%20L2%208TD!5e0!3m2!1sen!2suk!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rewards Section -->
+    <section class="rewards-section" id="rewards">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <p class="section-tag">Stroll Rewards</p>
+                <h2 class="section-title">Your lunch. Your rewards.</h2>
+            </div>
+
+            <div class="rewards-intro animate-on-scroll">
+                <div class="rewards-intro-card">
+                    <div class="piggy-widget">
+                        <span class="piggy-icon">&#128055;</span>
+                    </div>
+                    <div class="rewards-intro-text">
+                        <h3>It's simple, really</h3>
+                        <p>Every &pound;1 you spend = 1 point. Collect points, unlock free food. Add your Stroll Card to Apple or Google Wallet and you're good to go.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rewards-steps animate-on-scroll">
+                <div class="reward-step">
+                    <div class="reward-step-num">1</div>
+                    <div class="reward-step-content">
+                        <h4>Sign up</h4>
+                        <p>Takes 30 seconds. Add your Stroll Card to your phone wallet &mdash; no app needed.</p>
+                    </div>
+                </div>
+                <div class="reward-step">
+                    <div class="reward-step-num">2</div>
+                    <div class="reward-step-content">
+                        <h4>Earn points</h4>
+                        <p>Scan your card in-store or log in online. Points stack up on every order.</p>
+                    </div>
+                </div>
+                <div class="reward-step">
+                    <div class="reward-step-num">3</div>
+                    <div class="reward-step-content">
+                        <h4>Redeem rewards</h4>
+                        <p>Hit a milestone? Treat yourself. Free protein, free bowls, discounts &mdash; your choice.</p>
+                    </div>
+                </div>
+                <div class="reward-step">
+                    <div class="reward-step-num">4</div>
+                    <div class="reward-step-content">
+                        <h4>Level up</h4>
+                        <p>The more you stroll, the better it gets. Unlock tiers with bonus perks.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rewards-available animate-on-scroll">
+                <h3>What you can earn</h3>
+                <div class="rewards-grid">
+                    <div class="reward-item">
+                        <span class="reward-points">40 pts</span>
+                        <span class="reward-name">Free Extra Protein</span>
+                        <span class="reward-desc">Chicken, falafel or tuna</span>
+                    </div>
+                    <div class="reward-item">
+                        <span class="reward-points">60 pts</span>
+                        <span class="reward-name">Free Drink</span>
+                        <span class="reward-desc">Any hot or cold drink</span>
+                    </div>
+                    <div class="reward-item">
+                        <span class="reward-points">80 pts</span>
+                        <span class="reward-name">Free Small Bowl</span>
+                        <span class="reward-desc">Signature or build your own</span>
+                    </div>
+                    <div class="reward-item">
+                        <span class="reward-points">100 pts</span>
+                        <span class="reward-name">Free Acai Bowl</span>
+                        <span class="reward-desc">Any acai from the menu</span>
+                    </div>
+                    <div class="reward-item">
+                        <span class="reward-points">125 pts</span>
+                        <span class="reward-name">Free Big Bowl</span>
+                        <span class="reward-desc">Go large on us</span>
+                    </div>
+                    <div class="reward-item">
+                        <span class="reward-points">150 pts</span>
+                        <span class="reward-name">&pound;10 Off</span>
+                        <span class="reward-desc">In-store or online</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rewards-tiers animate-on-scroll">
+                <h3>The more you stroll, the more you earn</h3>
+                <p class="tiers-subtitle">Your tier is based on total points earned &mdash; redeeming doesn't drop you down.</p>
+                <div class="tiers-grid">
+                    <div class="tier-card tier-bronze">
+                        <span class="tier-badge">&#129353;</span>
+                        <h4>Bronze</h4>
+                        <span class="tier-range">0 &ndash; 150 pts</span>
+                        <ul class="tier-perks">
+                            <li>Earn 1pt per &pound;1</li>
+                            <li>Birthday treat</li>
+                        </ul>
+                    </div>
+                    <div class="tier-card tier-silver">
+                        <span class="tier-badge">&#129352;</span>
+                        <h4>Silver</h4>
+                        <span class="tier-range">150+ pts</span>
+                        <ul class="tier-perks">
+                            <li>Everything in Bronze</li>
+                            <li>Double points 8am&ndash;11am</li>
+                        </ul>
+                    </div>
+                    <div class="tier-card tier-gold">
+                        <span class="tier-badge">&#129351;</span>
+                        <h4>Gold</h4>
+                        <span class="tier-range">750+ pts</span>
+                        <ul class="tier-perks">
+                            <li>Everything in Silver</li>
+                            <li>Double points all Friday</li>
+                            <li>&pound;25 gift card</li>
+                        </ul>
+                    </div>
+                    <div class="tier-card tier-platinum">
+                        <span class="tier-badge">&#128142;</span>
+                        <h4>Platinum</h4>
+                        <span class="tier-range">2000+ pts</span>
+                        <ul class="tier-perks">
+                            <li>Everything in Gold</li>
+                            <li>Always double points</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rewards-cta animate-on-scroll">
+                <p>Free to join. Works in-store and online. Your points are waiting.</p>
+                <div class="rewards-cta-buttons">
+                    <button class="btn btn-primary btn-large" id="openSignupBtn">
+                        Join Stroll Rewards
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                    <p class="rewards-cta-note">Already a member? Tap the piggy widget to check your points</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loyalty Signup Modal -->
+    <div class="signup-modal" id="signupModal">
+        <div class="signup-modal-backdrop" id="modalBackdrop"></div>
+        <div class="signup-modal-content">
+            <button class="signup-modal-close" id="closeModal" aria-label="Close">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+            <div class="signup-modal-header">
+                <div class="signup-modal-piggy">&#128055;</div>
+                <h3>Join Stroll Rewards</h3>
+                <p>Sign up in 30 seconds and start earning points on every order</p>
+            </div>
+            <div class="signup-modal-form" id="leatFormContainer">
+                <!-- Leat form will render here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Leat Form Script -->
+    <script type="text/javascript" src="https://forms.leat.com/form.js"></script>
+
+    <!-- Leat Account Widget (Piggy) -->
+    <script id="leat-widget" data-widget-id="3063" account-uuid="b514d00d-298b-4109-900b-8660a9852eb5" src="https://widget.leat.com/widget.js" defer></script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo footer-logo">
+                        <img src="images/logo.png" alt="Bowl & Stroll">
+                    </a>
+                    <p class="footer-tagline">Fresh bowls crafted daily in Liverpool. Skip the queue, feed your soul.</p>
+                </div>
+                <div class="footer-links">
+                    <h5>Order</h5>
+                    <ul>
+                        <li><a href="https://order.storekit.com/bowl-and-stroll/menu" target="_blank">Collection</a></li>
+                        <li><a href="https://www.ubereats.com/gb/store/bowl-%26-stroll/bQjKGEP-TyKcR6VdPRiIbw" target="_blank">Uber Eats</a></li>
+                        <li><a href="https://deliveroo.co.uk/menu/liverpool/liverpool-city-centre/bowl-and-stroll" target="_blank">Deliveroo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#catering">Catering</a></li>
+                        <li><a href="#location">Find Us</a></li>
+                        <li><a href="#rewards">Rewards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h5>Connect</h5>
+                    <div class="social-links">
+                        <a href="https://instagram.com/bowlandstroll_" class="social-link" target="_blank" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <circle cx="12" cy="12" r="4"/>
+                                <circle cx="18" cy="6" r="1.5" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bowl & Stroll. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile Order Button -->
+    <div class="sticky-order">
+        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="btn btn-primary btn-large" target="_blank">
+            Order Now
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+        </a>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+
+        menuBtn.addEventListener('click', () => {
+            menuBtn.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuBtn.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Header Scroll Effect
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Menu Tabs
+        const tabs = document.querySelectorAll('.menu-tab');
+        const grids = document.querySelectorAll('.menu-grid');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                grids.forEach(g => g.classList.remove('active'));
+
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.tab).classList.add('active');
+            });
+        });
+
+        // Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Signup Modal
+        const signupModal = document.getElementById('signupModal');
+        const openSignupBtn = document.getElementById('openSignupBtn');
+        const closeModalBtn = document.getElementById('closeModal');
+        const modalBackdrop = document.getElementById('modalBackdrop');
+        let leatFormInitialized = false;
+
+        function openModal() {
+            signupModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+
+            if (!leatFormInitialized && window.leat && window.leat.form) {
+                window.leat.form.init({
+                    formId: "6823ddf6-b371-4969-b091-d95ac7cc38ee",
+                    portalId: "leatFormContainer",
+                });
+                leatFormInitialized = true;
+            }
+        }
+
+        function closeModal() {
+            signupModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        openSignupBtn.addEventListener('click', openModal);
+        closeModalBtn.addEventListener('click', closeModal);
+        modalBackdrop.addEventListener('click', closeModal);
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && signupModal.classList.contains('active')) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>

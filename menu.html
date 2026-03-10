@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bowl & Stroll Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', -apple-system, sans-serif;
+            background-color: #faf8f3;
+            min-height: 100vh;
+            padding: 0;
+        }
+
+        /* Header */
+        .header {
+            background-color: #3d5a3d;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+        }
+
+        .logo-text {
+            color: white;
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.1;
+        }
+
+        .website {
+            color: #c4d4a8;
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.4rem;
+            font-style: italic;
+        }
+
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            padding: 40px 60px;
+            max-width: 1920px;
+            margin: 0 auto;
+        }
+
+        /* Section Cards */
+        .section-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .section-title {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.8rem;
+            color: #3d5a3d;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .section-title-with-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .section-price-badge {
+            background-color: #3d5a3d;
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        /* Menu Items */
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0ebe0;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .item-name {
+            font-weight: 500;
+            color: #2a2a2a;
+            font-size: 1.1rem;
+        }
+
+        .item-description {
+            font-size: 0.85rem;
+            color: #777;
+            margin-top: 2px;
+        }
+
+        .item-price {
+            font-weight: 600;
+            color: #3d5a3d;
+            font-size: 1.1rem;
+        }
+
+        /* Build Your Own Section */
+        .build-item {
+            margin-bottom: 16px;
+        }
+
+        .build-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .build-item-name {
+            font-weight: 600;
+            color: #2a2a2a;
+            font-size: 1.15rem;
+        }
+
+        .build-item-desc {
+            font-size: 0.85rem;
+            color: #888;
+            margin-top: 2px;
+        }
+
+        .combos-divider {
+            text-align: center;
+            color: #aaa;
+            font-size: 0.85rem;
+            margin: 20px 0;
+            letter-spacing: 2px;
+        }
+
+        .protein-note {
+            background-color: #f5f2eb;
+            border-radius: 8px;
+            padding: 12px 16px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 16px;
+        }
+
+        .protein-note strong {
+            color: #3d5a3d;
+        }
+
+        /* Signature Bowls */
+        .signature-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .size-badge {
+            background-color: #7a9a7a;
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .signature-item {
+            background-color: #f5f2eb;
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 12px;
+            border-left: 4px solid #7a9a7a;
+        }
+
+        .signature-name {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.15rem;
+            color: #4a6b4a;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .signature-ingredients {
+            font-size: 0.85rem;
+            color: #777;
+        }
+
+        /* Toasties */
+        .toastie-item {
+            padding: 14px 0;
+            border-bottom: 1px solid #f0ebe0;
+        }
+
+        .toastie-item:last-child {
+            border-bottom: none;
+        }
+
+        .toastie-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .toastie-name {
+            font-weight: 500;
+            color: #2a2a2a;
+            font-size: 1.1rem;
+        }
+
+        .toastie-desc {
+            font-size: 0.85rem;
+            color: #777;
+            margin-top: 3px;
+        }
+
+        /* Combo Deal Box */
+        .combo-deal {
+            background-color: #3d5a3d;
+            color: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .combo-title {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .combo-desc {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 8px;
+        }
+
+        .combo-price {
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+
+        /* Salad Me Up Deal */
+        .salad-me-up {
+            background: linear-gradient(135deg, #7a9a7a 0%, #4a6b4a 100%);
+            color: white;
+            border-radius: 12px;
+            padding: 18px;
+            text-align: center;
+            margin-top: 16px;
+        }
+
+        .salad-me-up-title {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .salad-me-up-desc {
+            font-size: 0.85rem;
+            opacity: 0.95;
+            margin-bottom: 6px;
+        }
+
+        .salad-me-up-price {
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        /* Acai Bowls */
+        .acai-item {
+            background-color: #fdf2f4;
+            border-radius: 12px;
+            padding: 14px 18px;
+            margin-bottom: 10px;
+            border-left: 4px solid #c4727e;
+        }
+
+        .acai-name {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.1rem;
+            color: #b85c68;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+
+        .acai-ingredients {
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        .acai-build {
+            background-color: #fef9fa;
+            border-radius: 10px;
+            padding: 14px;
+            text-align: center;
+            margin-top: 14px;
+            border: 1px dashed #e0c8cc;
+        }
+
+        .acai-build-title {
+            font-weight: 600;
+            color: #2a2a2a;
+            font-size: 0.9rem;
+            margin-bottom: 6px;
+        }
+
+        .acai-options {
+            font-size: 0.8rem;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .yogurt-swap {
+            font-size: 0.8rem;
+            color: #999;
+            text-align: center;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* Drinks */
+        .drinks-section .section-title {
+            color: #b85c68;
+        }
+
+        /* Column Layout */
+        .left-column,
+        .middle-column,
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">
+            <svg class="logo-icon" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25 8C25 8 20 3 15 8C10 13 15 20 25 28C35 20 40 13 35 8C30 3 25 8 25 8Z" fill="#7a9a7a"/>
+                <path d="M25 28V45" stroke="#7a9a7a" stroke-width="3" stroke-linecap="round"/>
+                <path d="M18 35C18 35 21 32 25 32C29 32 32 35 32 35" stroke="#7a9a7a" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+            <div class="logo-text">Bowl<br>& Stroll</div>
+        </div>
+        <div class="website">bowlandstroll.com</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Left Column -->
+        <div class="left-column">
+            <!-- Build Your Own Bowl -->
+            <div class="section-card">
+                <h2 class="section-title">Build Your Own Bowl</h2>
+
+                <div class="build-item">
+                    <div class="build-item-header">
+                        <span class="build-item-name">Small Bowl</span>
+                        <span class="item-price">&pound;7.50</span>
+                    </div>
+                    <div class="build-item-desc">Base + protein + 3 toppings</div>
+                </div>
+
+                <div class="build-item">
+                    <div class="build-item-header">
+                        <span class="build-item-name">Big Bowl</span>
+                        <span class="item-price">&pound;10.50</span>
+                    </div>
+                    <div class="build-item-desc">Base + protein + 6 toppings</div>
+                </div>
+
+                <div class="combos-divider">&mdash; combos &mdash;</div>
+
+                <div class="build-item">
+                    <div class="build-item-header">
+                        <span class="build-item-name">Lunch Combo</span>
+                        <span class="item-price">&pound;9.50</span>
+                    </div>
+                    <div class="build-item-desc">Small bowl + snack + drink</div>
+                </div>
+
+                <div class="build-item">
+                    <div class="build-item-header">
+                        <span class="build-item-name">Protein Combo</span>
+                        <span class="item-price">&pound;13.50</span>
+                    </div>
+                    <div class="build-item-desc">Big bowl + 2 proteins + snack + drink</div>
+                </div>
+
+                <div class="protein-note">
+                    <strong>Protein:</strong> Chicken &middot; Tuna &middot; Falafel &middot; Birria Beef +&pound;3 &middot; Extra +&pound;3
+                </div>
+            </div>
+
+            <!-- Signature Bowls -->
+            <div class="section-card">
+                <div class="signature-header">
+                    <h2 class="section-title" style="margin-bottom: 0;">Signature Bowls</h2>
+                    <span class="size-badge">S &pound;7.50 &middot; B &pound;10.50</span>
+                </div>
+
+                <div class="signature-item">
+                    <div class="signature-name">Chicken Fiesta</div>
+                    <div class="signature-ingredients">Chicken, avocado, peppers, pico de gallo, pickled onion</div>
+                </div>
+
+                <div class="signature-item">
+                    <div class="signature-name">Pesto Passion</div>
+                    <div class="signature-ingredients">Chicken, pico de gallo, olives, edamame, pickles</div>
+                </div>
+
+                <div class="signature-item">
+                    <div class="signature-name">Falafel Fattoush</div>
+                    <div class="signature-ingredients">Falafel, cucumber, tomatoes, olives, hummus</div>
+                </div>
+
+                <div class="signature-item">
+                    <div class="signature-name">Cheeky Tuna</div>
+                    <div class="signature-ingredients">Tuna, edamame, seaweed, rainbow slaw, carrot</div>
+                </div>
+
+                <div class="signature-item">
+                    <div class="signature-name">The Beast</div>
+                    <div class="signature-ingredients">Chicken, birria beef, falafel, rice, 2 eggs &mdash; &pound;15</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Middle Column -->
+        <div class="middle-column">
+            <!-- Toasties -->
+            <div class="section-card">
+                <h2 class="section-title">Toasties</h2>
+
+                <div class="toastie-item">
+                    <div class="toastie-header">
+                        <span class="toastie-name">Triple Cheese</span>
+                        <span class="item-price">&pound;5.50</span>
+                    </div>
+                    <div class="toastie-desc">A classic blend of melted cheddar, mozzarella & red leicester</div>
+                </div>
+
+                <div class="toastie-item">
+                    <div class="toastie-header">
+                        <span class="toastie-name">Pesto Chicken</span>
+                        <span class="item-price">&pound;7.50</span>
+                    </div>
+                    <div class="toastie-desc">Chicken, basil pesto, mozzarella & sun-dried tomato</div>
+                </div>
+
+                <div class="toastie-item">
+                    <div class="toastie-header">
+                        <span class="toastie-name">Truffle Mushroom</span>
+                        <span class="item-price">&pound;8</span>
+                    </div>
+                    <div class="toastie-desc">Garlic mushrooms, truffle oil, melted mozzarella & herbs</div>
+                </div>
+
+                <div class="toastie-item">
+                    <div class="toastie-header">
+                        <span class="toastie-name">'Nduja Melt</span>
+                        <span class="item-price">&pound;9</span>
+                    </div>
+                    <div class="toastie-desc">Spicy pizza toastie - tomato, mozzarella, salami & 'nduja</div>
+                </div>
+
+                <div class="toastie-item">
+                    <div class="toastie-header">
+                        <span class="toastie-name">Birria</span>
+                        <span class="item-price">&pound;9</span>
+                    </div>
+                    <div class="toastie-desc">Slow-cooked spiced beef, melted cheese & jalape&ntilde;os</div>
+                </div>
+
+                <!-- Salad Me Up Deal -->
+                <div class="salad-me-up">
+                    <div class="salad-me-up-title">Salad Me Up</div>
+                    <div class="salad-me-up-desc">Add mixed leaf & 2 toppings to any toastie</div>
+                    <div class="salad-me-up-price">+&pound;3</div>
+                </div>
+            </div>
+
+            <!-- Soup -->
+            <div class="section-card">
+                <h2 class="section-title">Soup</h2>
+
+                <div class="menu-item">
+                    <span class="item-name">Tomato & Basil</span>
+                    <span class="item-price">&pound;5.50</span>
+                </div>
+
+                <div class="menu-item">
+                    <span class="item-name">Chicken Soup</span>
+                    <span class="item-price">&pound;5.50</span>
+                </div>
+
+                <div class="combo-deal">
+                    <div class="combo-title">Toastie & Soup</div>
+                    <div class="combo-desc">Triple Cheese + any soup</div>
+                    <div class="combo-price">&pound;8.50</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-column">
+            <!-- Acai Bowls -->
+            <div class="section-card">
+                <div class="section-title-with-price">
+                    <h2 class="section-title" style="margin-bottom: 0;">Acai Bowls</h2>
+                    <span class="section-price-badge">&pound;8.50</span>
+                </div>
+
+                <div class="acai-item">
+                    <div class="acai-name">Strawberry Delight</div>
+                    <div class="acai-ingredients">Strawberry, pistachio, choc granola</div>
+                </div>
+
+                <div class="acai-item">
+                    <div class="acai-name">Raspberry Crunch</div>
+                    <div class="acai-ingredients">Raspberry, peanut butter, walnuts</div>
+                </div>
+
+                <div class="acai-item">
+                    <div class="acai-name">Blueberry Dream</div>
+                    <div class="acai-ingredients">Blueberry, nutella, mixed seeds</div>
+                </div>
+
+                <div class="acai-item">
+                    <div class="acai-name">Banana Bliss</div>
+                    <div class="acai-ingredients">Banana, almond butter, granola</div>
+                </div>
+
+                <div class="acai-build">
+                    <div class="acai-build-title">Build your own &mdash; pick 4:</div>
+                    <div class="acai-options">Strawberry &middot; Blueberry &middot; Raspberry &middot; Banana &middot; Granola &middot; Chia Seeds &middot; Peanut Butter &middot; Almond Butter &middot; Nutella &middot; Pistachio &middot; Walnuts &middot; Mixed Seeds</div>
+                </div>
+
+                <div class="yogurt-swap">Yogurt bowl swap &pound;7.50</div>
+            </div>
+
+            <!-- Drinks -->
+            <div class="section-card drinks-section">
+                <h2 class="section-title">Drinks</h2>
+
+                <div class="menu-item">
+                    <span class="item-name">Tea / Espresso</span>
+                    <span class="item-price">&pound;2.50</span>
+                </div>
+
+                <div class="menu-item">
+                    <span class="item-name">Americano / Latte</span>
+                    <span class="item-price">&pound;3</span>
+                </div>
+
+                <div class="menu-item">
+                    <span class="item-name">Hot Chocolate</span>
+                    <span class="item-price">&pound;3.50</span>
+                </div>
+
+                <div class="menu-item">
+                    <span class="item-name">Soft Drinks</span>
+                    <span class="item-price">&pound;2</span>
+                </div>
+
+                <div class="menu-item">
+                    <span class="item-name">Water</span>
+                    <span class="item-price">&pound;1</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <g fill="#50725a" stroke="none">
+    <!-- Bowl shape -->
+    <path d="M 100 200 Q 250 300 400 200 L 400 250 Q 250 380 100 250 Z"/>
+    <!-- Leaf on top -->
+    <path d="M 250 150 Q 270 100 300 120 Q 280 160 250 150 Z"/>
+    <!-- Face -->
+    <circle cx="200" cy="230" r="15"/>
+    <circle cx="280" cy="230" r="15"/>
+    <path d="M 210 260 Q 250 280 290 260" stroke="#50725a" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <!-- Legs -->
+    <path d="M 200 300 Q 180 360 220 360 Q 210 330 240 310 Z"/>
+    <path d="M 280 300 Q 300 360 260 360 Q 270 330 240 310 Z"/>
+  </g>
+</svg>
