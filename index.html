@@ -97,8 +97,33 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Instagram Feed (Elfsight) -->
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+
+    <!-- dataLayer initialization (must be before GTM) -->
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+        'businessName': 'Bowl & Stroll',
+        'businessLocation': 'Liverpool, L2 8TD',
+        'pageType': 'homepage'
+    });
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    <!-- End Google Tag Manager -->
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- ==========================================
          HEADER & NAVIGATION
@@ -116,7 +141,7 @@
                 <li><a href="#rewards">Rewards</a></li>
             </ul>
             <div class="nav-cta">
-                <a href="https://order.storekit.com/bowl-and-stroll/menu" class="btn btn-primary" target="_blank" rel="noopener">
+                <a href="https://order.storekit.com/bowl-and-stroll/menu" class="btn btn-primary" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="nav_order_now">
                     Order Now
                     <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
@@ -136,7 +161,7 @@
         <a href="#catering">Catering</a>
         <a href="#location">Find Us</a>
         <a href="#rewards">Rewards</a>
-        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="btn btn-primary btn-large" target="_blank" rel="noopener">Order Now</a>
+        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="btn btn-primary btn-large" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="mobile_menu_order_now">Order Now</a>
     </div>
 
 
@@ -154,7 +179,7 @@
                     <h1>Build your <em>perfect</em> bowl</h1>
                     <p class="hero-description">Fresh ingredients, bold flavours, crafted your way. Liverpool's favourite salad bowl destination &mdash; for collection or delivery.</p>
                     <div class="hero-buttons">
-                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="btn btn-primary btn-large" target="_blank" rel="noopener">
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="btn btn-primary btn-large" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="hero_order_collection">
                             Order Collection
                             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </a>
@@ -178,7 +203,7 @@
         <div class="container">
             <div class="promo-banner-content">
                 <span class="promo-banner-text">Lunch Combo &mdash; Small bowl + snack + drink for just &pound;9.50</span>
-                <a href="https://order.storekit.com/bowl-and-stroll/menu" class="btn" target="_blank" rel="noopener">Order Now</a>
+                <a href="https://order.storekit.com/bowl-and-stroll/menu" class="btn" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="promo_banner_order_now">Order Now</a>
             </div>
         </div>
     </div>
@@ -300,7 +325,7 @@
                             <span class="menu-item-price">&pound;7.50</span>
                         </div>
                         <p>Half rice, half leaf &middot; Chicken, avocado, peppers, pico de gallo &amp; pickled onion</p>
-                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-109988" class="menu-item-cta" target="_blank" rel="noopener">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-109988" class="menu-item-cta" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="menu_signature_chicken_fiesta">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
                 <div class="menu-item animate-on-scroll">
@@ -311,7 +336,7 @@
                             <span class="menu-item-price">&pound;7.50</span>
                         </div>
                         <p>Pesto fusilli &middot; Chicken, pico de gallo, olives, edamame &amp; pickles</p>
-                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-109988" class="menu-item-cta" target="_blank" rel="noopener">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-109988" class="menu-item-cta" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="menu_signature_pesto_passion">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
                 <div class="menu-item animate-on-scroll">
@@ -322,7 +347,7 @@
                             <span class="menu-item-price">&pound;7.50</span>
                         </div>
                         <p>Mixed leaf &middot; Falafel, cucumber, tomatoes, olives, hummus &amp; pickles</p>
-                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-109988" class="menu-item-cta" target="_blank" rel="noopener">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-109988" class="menu-item-cta" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="menu_signature_falafel_fattoush">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
                 <div class="menu-item animate-on-scroll">
@@ -333,7 +358,7 @@
                             <span class="menu-item-price">&pound;7.50</span>
                         </div>
                         <p>Jasmine rice &middot; Tuna, edamame, seaweed, rainbow slaw &amp; carrot</p>
-                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-109988" class="menu-item-cta" target="_blank" rel="noopener">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-109988" class="menu-item-cta" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="menu_signature_cheeky_tuna">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
             </div>
@@ -348,7 +373,7 @@
                             <span class="menu-item-price">&pound;7.50</span>
                         </div>
                         <p>Base + protein + 3 toppings</p>
-                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131450" class="menu-item-cta" target="_blank" rel="noopener">Build yours <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131450" class="menu-item-cta" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="menu_byo_small">Build yours <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
                 <div class="menu-item animate-on-scroll">
@@ -359,7 +384,7 @@
                             <span class="menu-item-price">&pound;10.50</span>
                         </div>
                         <p>Base + protein + 6 toppings</p>
-                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131450" class="menu-item-cta" target="_blank" rel="noopener">Build yours <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131450" class="menu-item-cta" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="menu_byo_big">Build yours <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
             </div>
@@ -374,7 +399,7 @@
                             <span class="menu-item-price">&pound;10.00</span>
                         </div>
                         <p>Prosciutto, mozzarella, provolone, balsamic glaze &amp; rocket added after baking</p>
-                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131449" class="menu-item-cta" target="_blank" rel="noopener">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131449" class="menu-item-cta" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="menu_sub_prosciutto">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
                 <div class="menu-item animate-on-scroll">
@@ -385,7 +410,7 @@
                             <span class="menu-item-price">&pound;10.00</span>
                         </div>
                         <p>Salami, 'nduja, provolone &amp; honey sriracha</p>
-                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131449" class="menu-item-cta" target="_blank" rel="noopener">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131449" class="menu-item-cta" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="menu_sub_nduja">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
                 <div class="menu-item animate-on-scroll">
@@ -396,7 +421,7 @@
                             <span class="menu-item-price">&pound;10.00</span>
                         </div>
                         <p>Porchetta, provolone &amp; red onion (Signature)</p>
-                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131449" class="menu-item-cta" target="_blank" rel="noopener">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131449" class="menu-item-cta" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="menu_sub_porchetta">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
                 <div class="menu-item animate-on-scroll">
@@ -407,7 +432,7 @@
                             <span class="menu-item-price">&pound;9.00</span>
                         </div>
                         <p>Marinated chicken, mozzarella, provolone, pesto &amp; pickled onion</p>
-                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131449" class="menu-item-cta" target="_blank" rel="noopener">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131449" class="menu-item-cta" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="menu_sub_chicken_pesto">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
                 <div class="menu-item animate-on-scroll">
@@ -418,7 +443,7 @@
                             <span class="menu-item-price">&pound;7.00</span>
                         </div>
                         <p>Mozzarella &amp; provolone on toasted ciabatta</p>
-                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131449" class="menu-item-cta" target="_blank" rel="noopener">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131449" class="menu-item-cta" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="menu_sub_cheese">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
             </div>
@@ -433,7 +458,7 @@
                             <span class="menu-item-price">&pound;8.50</span>
                         </div>
                         <p>A&ccedil;a&iacute; topped with strawberry, pistachio &amp; choc granola</p>
-                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131451" class="menu-item-cta" target="_blank" rel="noopener">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131451" class="menu-item-cta" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="menu_acai_strawberry_delight">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
                 <div class="menu-item animate-on-scroll">
@@ -444,7 +469,7 @@
                             <span class="menu-item-price">&pound;8.50</span>
                         </div>
                         <p>A&ccedil;a&iacute; topped with raspberry, peanut butter &amp; walnuts</p>
-                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131451" class="menu-item-cta" target="_blank" rel="noopener">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131451" class="menu-item-cta" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="menu_acai_raspberry_crunch">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
                 <div class="menu-item animate-on-scroll">
@@ -455,7 +480,7 @@
                             <span class="menu-item-price">&pound;8.50</span>
                         </div>
                         <p>A&ccedil;a&iacute; topped with blueberry, nutella &amp; mixed seeds</p>
-                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131451" class="menu-item-cta" target="_blank" rel="noopener">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131451" class="menu-item-cta" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="menu_acai_blueberry_dream">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
                 <div class="menu-item animate-on-scroll">
@@ -466,7 +491,7 @@
                             <span class="menu-item-price">&pound;8.50</span>
                         </div>
                         <p>A&ccedil;a&iacute; topped with banana, almond butter &amp; granola</p>
-                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131451" class="menu-item-cta" target="_blank" rel="noopener">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131451" class="menu-item-cta" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="menu_acai_banana_bliss">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
                 <div class="menu-item animate-on-scroll">
@@ -477,7 +502,7 @@
                             <span class="menu-item-price">&pound;8.50</span>
                         </div>
                         <p>A&ccedil;a&iacute; base with any 4 toppings of your choice</p>
-                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131451" class="menu-item-cta" target="_blank" rel="noopener">Build yours <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131451" class="menu-item-cta" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="menu_acai_byo">Build yours <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
                 <div class="menu-item animate-on-scroll">
@@ -488,7 +513,7 @@
                             <span class="menu-item-price">&pound;7.50</span>
                         </div>
                         <p>Yogurt base with your choice of toppings</p>
-                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131451" class="menu-item-cta" target="_blank" rel="noopener">Build yours <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131451" class="menu-item-cta" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="menu_yogurt_byo">Build yours <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
             </div>
@@ -503,7 +528,7 @@
                             <span class="menu-item-price">&pound;13.50</span>
                         </div>
                         <p>Big bowl + 2 proteins + snack + drink</p>
-                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131452" class="menu-item-cta" target="_blank" rel="noopener">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131452" class="menu-item-cta" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="menu_combo_protein">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
                 <div class="menu-item animate-on-scroll">
@@ -514,7 +539,7 @@
                             <span class="menu-item-price">&pound;9.50</span>
                         </div>
                         <p>Small bowl + snack + drink</p>
-                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131452" class="menu-item-cta" target="_blank" rel="noopener">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131452" class="menu-item-cta" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="menu_combo_lunch">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
                 <div class="menu-item animate-on-scroll">
@@ -525,7 +550,7 @@
                             <span class="menu-item-price">&pound;11.50</span>
                         </div>
                         <p>Cheese hot sub + any soup</p>
-                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131452" class="menu-item-cta" target="_blank" rel="noopener">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131452" class="menu-item-cta" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="menu_combo_soup">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
             </div>
@@ -540,7 +565,7 @@
                             <span class="menu-item-price">&pound;5.50</span>
                         </div>
                         <p>Creamy tomato soup, served with a bread roll</p>
-                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-121644" class="menu-item-cta" target="_blank" rel="noopener">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-121644" class="menu-item-cta" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="menu_soup_tomato">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
                 <div class="menu-item animate-on-scroll">
@@ -551,7 +576,7 @@
                             <span class="menu-item-price">&pound;5.50</span>
                         </div>
                         <p>Hearty chicken &amp; vegetable soup with a bread roll</p>
-                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-121644" class="menu-item-cta" target="_blank" rel="noopener">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="https://order.storekit.com/bowl-and-stroll/menu#category-121644" class="menu-item-cta" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="menu_soup_chicken_veg">Order this <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
             </div>
@@ -655,7 +680,7 @@
             </div>
 
             <div class="menu-section-cta animate-on-scroll">
-                <a href="https://order.storekit.com/bowl-and-stroll/menu" class="btn btn-primary btn-large" target="_blank" rel="noopener">
+                <a href="https://order.storekit.com/bowl-and-stroll/menu" class="btn btn-primary btn-large" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="menu_section_view_full">
                     View Full Menu &amp; Order
                     <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
@@ -675,7 +700,7 @@
                 <h2 class="section-title">Get your bowl, your way</h2>
             </div>
             <div class="order-options">
-                <a href="https://order.storekit.com/bowl-and-stroll/menu" class="order-card order-card-featured animate-on-scroll" target="_blank" rel="noopener">
+                <a href="https://order.storekit.com/bowl-and-stroll/menu" class="order-card order-card-featured animate-on-scroll" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="order_section_collection">
                     <div class="order-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
                     </div>
@@ -683,7 +708,7 @@
                     <p>Skip the queue &mdash; order ahead and collect from 14a Water Street. No delivery fees.</p>
                     <span class="btn btn-primary">Order on StoreKit</span>
                 </a>
-                <a href="https://deliveroo.co.uk/menu/Liverpool/liverpool-city-centre/bowl-and-stroll-14a-water-st" class="order-card animate-on-scroll" target="_blank" rel="noopener">
+                <a href="https://deliveroo.co.uk/menu/Liverpool/liverpool-city-centre/bowl-and-stroll-14a-water-st" class="order-card animate-on-scroll" target="_blank" rel="noopener" data-track-category="deliveroo" data-track-action="click" data-track-label="order_section_deliveroo">
                     <div class="order-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
                     </div>
@@ -691,7 +716,7 @@
                     <p>Fast delivery with real-time tracking</p>
                     <span class="btn btn-secondary">Order on Deliveroo</span>
                 </a>
-                <a href="https://www.ubereats.com/gb/store/bowl-&-stroll/SOOPIp66WaeNyFceHapkTw" class="order-card animate-on-scroll" target="_blank" rel="noopener">
+                <a href="https://www.ubereats.com/gb/store/bowl-&-stroll/SOOPIp66WaeNyFceHapkTw" class="order-card animate-on-scroll" target="_blank" rel="noopener" data-track-category="uber_eats" data-track-action="click" data-track-label="order_section_uber_eats">
                     <div class="order-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
                     </div>
@@ -719,7 +744,7 @@
                         <div class="byo-step"><span class="byo-step-num">3</span><span>Load up on toppings &mdash; 3 or 6 depending on size</span></div>
                         <div class="byo-step"><span class="byo-step-num">4</span><span>Finish with sauce &amp; crunchy toppers</span></div>
                     </div>
-                    <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131450" class="btn btn-large byo-btn-inverted" target="_blank" rel="noopener">
+                    <a href="https://order.storekit.com/bowl-and-stroll/menu#category-131450" class="btn btn-large byo-btn-inverted" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="byo_section_start_building">
                         Start Building
                         <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
@@ -758,11 +783,11 @@
                         <li>Dietary options for every guest</li>
                     </ul>
                     <div class="catering-buttons">
-                        <a href="https://order.storekit.com/bowl-and-stroll-catering/menu" class="btn btn-primary" target="_blank" rel="noopener">
+                        <a href="https://order.storekit.com/bowl-and-stroll-catering/menu" class="btn btn-primary" target="_blank" rel="noopener" data-track-category="catering" data-track-action="click" data-track-label="catering_view_menu">
                             View Catering Menu
                             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
                         </a>
-                        <a href="https://instagram.com/bowlandstroll_" class="btn btn-secondary" target="_blank" rel="noopener">Message Us</a>
+                        <a href="https://instagram.com/bowlandstroll_" class="btn btn-secondary" target="_blank" rel="noopener" data-track-category="social" data-track-action="click" data-track-label="catering_message_instagram">Message Us</a>
                     </div>
                 </div>
                 <div class="catering-image animate-on-scroll">
@@ -792,10 +817,10 @@
                         </div>
                         <div class="location-detail">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-                            <div><strong>Phone</strong><span>+44 7446 640239</span></div>
+                            <div><strong>Phone</strong><a href="tel:+447446640239" data-track-category="phone" data-track-action="click" data-track-label="location_phone_click">+44 7446 640239</a></div>
                         </div>
                     </div>
-                    <a href="https://maps.google.com/?q=14a+Water+Street+Liverpool+L2+8TD" class="btn btn-secondary" target="_blank" rel="noopener">
+                    <a href="https://maps.google.com/?q=14a+Water+Street+Liverpool+L2+8TD" class="btn btn-secondary" target="_blank" rel="noopener" data-track-category="directions" data-track-action="click" data-track-label="location_get_directions">
                         Get Directions
                         <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
                     </a>
@@ -807,6 +832,30 @@
                 <div class="location-map animate-on-scroll">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.0!2d-2.9936!3d53.4084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b212e6b9b0001%3A0x0!2s14a%20Water%20St%2C%20Liverpool%20L2%208TD!5e0!3m2!1sen!2suk!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
                 </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         INSTAGRAM FEED
+         To update: replace the feed-id with your
+         Elfsight app ID from dash.elfsight.com
+         ========================================== -->
+    <section class="instagram-section" id="instagram">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <p class="section-tag">Follow Us</p>
+                <h2 class="section-title">Fresh from our feed</h2>
+            </div>
+            <div class="instagram-feed animate-on-scroll">
+                <div class="elfsight-app-5575d410-7898-41c9-b8d3-a3c1998f18f5" data-elfsight-app-lazy></div>
+            </div>
+            <div class="instagram-cta animate-on-scroll">
+                <a href="https://instagram.com/bowlandstroll_" class="btn btn-secondary" target="_blank" rel="noopener">
+                    @bowlandstroll_
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
             </div>
         </div>
     </section>
@@ -865,7 +914,7 @@
             <div class="rewards-cta animate-on-scroll">
                 <p>Free to join. Works in-store and online. Your points are waiting.</p>
                 <div class="rewards-cta-buttons">
-                    <button class="btn btn-primary btn-large" id="openSignupBtn">
+                    <button class="btn btn-primary btn-large" id="openSignupBtn" data-track-category="loyalty" data-track-action="click" data-track-label="rewards_join_signup">
                         Join Stroll Rewards
                         <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </button>
@@ -908,9 +957,9 @@
                 <div class="footer-links">
                     <h5>Order</h5>
                     <ul>
-                        <li><a href="https://order.storekit.com/bowl-and-stroll/menu" target="_blank" rel="noopener">Collection</a></li>
-                        <li><a href="https://www.ubereats.com/gb/store/bowl-&-stroll/SOOPIp66WaeNyFceHapkTw" target="_blank" rel="noopener">Uber Eats</a></li>
-                        <li><a href="https://deliveroo.co.uk/menu/Liverpool/liverpool-city-centre/bowl-and-stroll-14a-water-st" target="_blank" rel="noopener">Deliveroo</a></li>
+                        <li><a href="https://order.storekit.com/bowl-and-stroll/menu" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="footer_collection">Collection</a></li>
+                        <li><a href="https://www.ubereats.com/gb/store/bowl-&-stroll/SOOPIp66WaeNyFceHapkTw" target="_blank" rel="noopener" data-track-category="uber_eats" data-track-action="click" data-track-label="footer_uber_eats">Uber Eats</a></li>
+                        <li><a href="https://deliveroo.co.uk/menu/Liverpool/liverpool-city-centre/bowl-and-stroll-14a-water-st" target="_blank" rel="noopener" data-track-category="deliveroo" data-track-action="click" data-track-label="footer_deliveroo">Deliveroo</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -925,7 +974,7 @@
                 <div class="footer-links">
                     <h5>Connect</h5>
                     <div class="social-links">
-                        <a href="https://instagram.com/bowlandstroll_" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
+                        <a href="https://instagram.com/bowlandstroll_" class="social-link" target="_blank" rel="noopener" aria-label="Instagram" data-track-category="social" data-track-action="click" data-track-label="footer_instagram">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r="1.5" fill="currentColor"/></svg>
                         </a>
                     </div>
@@ -940,7 +989,7 @@
 
     <!-- Sticky Mobile Order Button -->
     <div class="sticky-order">
-        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="btn btn-primary btn-large" target="_blank" rel="noopener">
+        <a href="https://order.storekit.com/bowl-and-stroll/menu" class="btn btn-primary btn-large" target="_blank" rel="noopener" data-track-category="storekit" data-track-action="click" data-track-label="sticky_mobile_order_now">
             Order Now
             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
@@ -950,6 +999,9 @@
     <!-- External Scripts: Leat Loyalty -->
     <script type="text/javascript" src="https://forms.leat.com/form.js"></script>
     <script id="leat-widget" data-widget-id="3063" account-uuid="b514d00d-298b-4109-900b-8660a9852eb5" src="https://widget.leat.com/widget.js" defer></script>
+
+    <!-- Conversion Tracking -->
+    <script src="js/tracking.js"></script>
 
     <!-- Site JavaScript -->
     <script src="js/main.js"></script>

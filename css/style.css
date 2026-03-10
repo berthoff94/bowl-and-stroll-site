@@ -316,7 +316,16 @@ nav { display: flex; justify-content: space-between; align-items: center; }
 
 
 /* ==========================================================================
-   16. REWARDS
+   16. INSTAGRAM FEED
+   ========================================================================== */
+
+.instagram-section { padding: 5rem 0; background: var(--white); }
+.instagram-feed { margin-bottom: 2rem; }
+.instagram-cta { text-align: center; margin-top: 1.5rem; }
+
+
+/* ==========================================================================
+   17. REWARDS
    ========================================================================== */
 
 .rewards-section { padding: 5rem 0; background: var(--cream); position: relative; overflow: hidden; }
